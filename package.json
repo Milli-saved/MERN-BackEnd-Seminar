@@ -1,0 +1,25 @@
+{
+  "name": "mern-backend-seminar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milli-saved/MERN-BackEnd-Seminar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Milli-saved/MERN-BackEnd-Seminar/issues"
+  },
+  "homepage": "https://github.com/Milli-saved/MERN-BackEnd-Seminar#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2"
+  }
+}
