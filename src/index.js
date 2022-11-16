@@ -1,7 +1,17 @@
 const express = require("express");
 const cors = require("cors");
+const mongoose = require("mongoose");
 
 const app = express();
+
+// Connection with the database
+
+mongoose
+  .connect("mongodb://127.0.0.1:27017/zoo")
+  .then(() => {
+    console.log("Connected to database zoo");
+  })
+  .catch((err) => console.log("error while connecting to the database", err));
 
 // MIDDLEWARES
 app.use(cors());
