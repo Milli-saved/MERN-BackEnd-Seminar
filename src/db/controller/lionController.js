@@ -26,3 +26,18 @@ exports.addLion = async (req, res, next) => {
     });
   }
 };
+
+exports.getOneLion = async (req, res, next) => {
+  try {
+    let lion = req.lion;
+    res.status(200).json({
+      status: "successful",
+      lion,
+    });
+  } catch (err) {
+    res.status(400).json({
+      status: "error",
+      error: err,
+    });
+  }
+};
